@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #00ff6a;
+  font-family: "Courier New", monospace;
+}
+
+.terminal {
+  padding: 24px;
+  max-width: 900px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background: #00ff6a;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
