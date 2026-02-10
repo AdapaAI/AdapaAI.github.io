@@ -1,0 +1,46 @@
+const terminal = document.getElementById("terminal");
+
+const lines = [
+  "booting AdapaAI portfolio...",
+  "",
+  "> whoami",
+  "Engineering Manager | AI Agent Systems",
+  "",
+  "> focus",
+  "- AI Agents",
+  "- n8n Workflows",
+  "- Automation at scale",
+  "",
+  "> projects",
+  "1. ai-agent-systems (GitHub)",
+  "2. Jarvis-style daily assistant (WIP)",
+  "",
+  "> contact",
+  "LinkedIn: https://linkedin.com",
+  "GitHub: https://github.com/AdapaAI",
+  "",
+  "> ready"
+];
+
+let lineIndex = 0;
+let charIndex = 0;
+
+function typeLine() {
+  if (lineIndex >= lines.length) {
+    terminal.innerHTML += `<span class="cursor"></span>`;
+    return;
+  }
+
+  if (charIndex < lines[lineIndex].length) {
+    terminal.innerHTML += lines[lineIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeLine, 40);
+  } else {
+    terminal.innerHTML += "\n";
+    charIndex = 0;
+    lineIndex++;
+    setTimeout(typeLine, 400);
+  }
+}
+
+typeLine();
