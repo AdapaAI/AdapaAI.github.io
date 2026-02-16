@@ -2,6 +2,9 @@ const terminal = document.getElementById("terminal");
 
 const lines = [
   "booting AdapaAI portfolio...",
+  "Hello",
+  "This is personal website of Sasank Adapa",
+
   "",
   "> whoami",
   "Engineering Manager | AI Agent Systems",
