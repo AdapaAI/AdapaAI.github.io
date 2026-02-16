@@ -12,12 +12,11 @@ const lines = [
   "- Orchestrator AD (WIP)",
   "",
   "> projects",
-  "1. ai-agent-systems (GitHub)",
-  "2. Jarvis-style daily assistant (WIP)",
+  "1. <a href='https://github.com/AdapaAI/ai-agent-systems' target='_blank'>ai-agent-systems (GitHub)</a>",
   "",
   "> contact",
-  "LinkedIn: https://www.linkedin.com/in/sasank-adapa-977175b3",
-  "GitHub: https://github.com/AdapaAI",
+  "<a href='https://github.com/AdapaAI' target='_blank'>GitHub</a>",
+  "<a href='https://www.linkedin.com/in/sasank-adapa-977175b3' target='_blank'>LinkedIn</a>",
   "",
   "> ready"
 ];
@@ -32,7 +31,7 @@ function typeLine() {
   }
 
   if (charIndex < lines[lineIndex].length) {
-    terminal.innerHTML += lines[lineIndex].charAt(charIndex);
+    terminal.innerHTML += lines[lineIndex].[charIndex];
     charIndex++;
     setTimeout(typeLine, 40);
   } else {
