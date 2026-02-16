@@ -33,7 +33,7 @@ function typeLine() {
   }
 
   if (charIndex < lines[lineIndex].length) {
-    terminal.innerHTML += lines[lineIndex].[charIndex];
+    terminal.innerHTML += lines[lineIndex][charIndex];
     charIndex++;
     setTimeout(typeLine, 40);
   } else {
