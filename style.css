@@ -23,3 +23,12 @@ body {
 @keyframes blink {
   50% { opacity: 0; }
 }
+
+a {
+  color: #00ff6a;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #7CFFB2;
+}
