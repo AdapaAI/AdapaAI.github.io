@@ -6,7 +6,7 @@ const lines = [
   "System online.",
   "",
   "> whoami",
-  "Sasank Adapa"
+  "Sasank Adapa",
   "Engineering Manager @ Ericsson",
   "AI Systems Architect",
   "Builder of autonomous agent workflows",
