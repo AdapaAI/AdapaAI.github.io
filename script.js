@@ -56,4 +56,27 @@ function typeLine() {
   }
 }
 
+// Spawn a blip at the cursor position
+function spawnBlip() {
+  const blip = document.createElement("span");
+  blip.className = "blip";
+
+  terminal.appendChild(blip);
+
+  // Calculate last character position
+  const range = document.createRange();
+  const lastNode = terminal.lastChild || terminal;
+  const textNode = lastNode.nodeType === 3 ? lastNode : lastNode.firstChild || lastNode;
+  range.setStart(textNode, textNode.length);
+  range.setEnd(textNode, textNode.length);
+  const rect = range.getBoundingClientRect();
+  const terminalRect = terminal.getBoundingClientRect();
+
+  blip.style.left = `${rect.right - terminalRect.left}px`;
+  blip.style.top  = `${rect.top - terminalRect.top}px`;
+
+  setTimeout(() => blip.remove(), 400);
+}
+
+// Start animation
 typeLine();
