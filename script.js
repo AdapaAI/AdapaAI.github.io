@@ -6,7 +6,7 @@ const lines = [
   "This is personal website of Sasank Adapa",
   "",
   "> whoami",
-  "Engineering Manager | AI Agent Systems",
+  "Engineering Manager | AI Agent Systems builder",
   "",
   "> focus",
   "- AI Agents",
@@ -14,7 +14,7 @@ const lines = [
   "- Orchestrator AD (WIP)",
   "",
   "> projects",
-  "1. <a href='https://github.com/AdapaAI/ai-agent-systems' target='_blank'>ai-agent-systems (GitHub)</a>",
+  "<a href='https://github.com/AdapaAI/ai-agent-systems' target='_blank'>ai-agent-systems (GitHub)</a>",
   "",
   "> contact",
   "<a href='https://github.com/AdapaAI' target='_blank'>GitHub</a>",
@@ -32,8 +32,19 @@ function typeLine() {
     return;
   }
 
-  if (charIndex < lines[lineIndex].length) {
-    terminal.innerHTML += lines[lineIndex][charIndex];
+  const currentLine = lines[lineIndex];
+
+  // If line contains HTML (like anchor tags), render instantly
+  if (currentLine.includes("<a")) {
+    terminal.innerHTML += currentLine + "\n";
+    lineIndex++;
+    setTimeout(typeLine, 400);
+    return;
+  }
+
+  // Normal typing animation
+  if (charIndex < currentLine.length) {
+    terminal.innerHTML += currentLine[charIndex];
     charIndex++;
     setTimeout(typeLine, 40);
   } else {
