@@ -16,11 +16,12 @@ const lines = [
   "> projects",
   "<a href='https://github.com/AdapaAI/ai-agent-systems' target='_blank'>ai-agent-systems (GitHub)</a>",
   "",
-  "> contact",
+  "> Sasank is accessible on following platforms:",
   "<a href='https://github.com/AdapaAI' target='_blank'>GitHub</a>",
   "<a href='https://www.linkedin.com/in/sasank-adapa-977175b3' target='_blank'>LinkedIn</a>",
-  "",
-  "> ready"
+  "& through e-mail at sasanksujan.93@gmail.com",
+  "Have a good day,",
+  "Sasank Adapa",
 ];
 
 let lineIndex = 0;
