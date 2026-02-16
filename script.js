@@ -18,6 +18,8 @@ const lines = [
   "<a href='https://github.com/AdapaAI' target='_blank'>GitHub</a>",
   "<a href='https://www.linkedin.com/in/sasank-adapa-977175b3' target='_blank'>LinkedIn</a>",
   "& through e-mail at sasanksujan.93@gmail.com",
+  "",
+  "",
   "Have a good day!",
   "Sasank Adapa",
 ];
