@@ -1,12 +1,15 @@
 const terminal = document.getElementById("terminal");
 
 const lines = [
-  "booting AdapaAI portfolio...",
-  "Hello",
-  "This is personal website of Sasank Adapa",
+  "Initializing agent interface...",
+  "",
+  "System online.",
   "",
   "> whoami",
-  "Engineering Manager | AI Agent Systems builder",
+  "Sasank Adapa"
+  "Engineering Manager @ Ericsson",
+  "AI Systems Architect",
+  "Builder of autonomous agent workflows",
   "",
   "> focus",
   "- AI Agents",
@@ -16,11 +19,11 @@ const lines = [
   "> projects",
   "<a href='https://github.com/AdapaAI/ai-agent-systems' target='_blank'>ai-agent-systems (GitHub)</a>",
   "",
-  "> Sasank is accessible on following platforms:",
+  "> Sasank is accessible on following platforms for tech work:",
   "<a href='https://github.com/AdapaAI' target='_blank'>GitHub</a>",
   "<a href='https://www.linkedin.com/in/sasank-adapa-977175b3' target='_blank'>LinkedIn</a>",
   "& through e-mail at sasanksujan.93@gmail.com",
-  "Have a good day,",
+  "Have a good day!",
   "Sasank Adapa",
 ];
 
